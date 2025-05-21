@@ -1,0 +1,5 @@
+##Sun's Grid Engine Parameter
+# SETSHELL grid
+
+conda activate gcndepression
+python main.py
