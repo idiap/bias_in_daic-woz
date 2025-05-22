@@ -1,6 +1,6 @@
 # DAIC-WOZ: On the Validity of Using the Therapist's prompts in Automatic Depression Detection from Clinical Interview
 
-**This repository accompanies [the paper](https://aclanthology.org/2024.clinicalnlp-1.8/) presented at [ClinicalNLP workshop](https://clinical-nlp.github.io/2024/) at NAACL 2024.**
+**This repository accompanies [the paper](https://aclanthology.org/2024.clinicalnlp-1.8/) presented at [ClinicalNLP workshop](https://clinical-nlp.github.io/2024/) (NAACL 2024).**
 
 ## Abstract
 
