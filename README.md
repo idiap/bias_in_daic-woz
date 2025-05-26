@@ -2,6 +2,8 @@
 
 **This repository accompanies [the paper](https://aclanthology.org/2024.clinicalnlp-1.8/) presented at [ClinicalNLP workshop](https://clinical-nlp.github.io/2024/) (NAACL 2024).**
 
+_( :point_right: You might also be interested in [this other work](https://github.com/idiap/Node_weighted_GCN_for_depression_detection), presented at Interspeech 2023)_
+
 ## Abstract
 
 > Automatic depression detection from conversational data has gained significant interest in recent years. The DAIC-WOZ dataset, interviews conducted by a human-controlled virtual agent, has been widely used for this task. Recent studies have reported enhanced performance when incorporating interviewer's prompts into the model. In this work, we hypothesize that this improvement might be mainly due to a bias present in these prompts, rather than the proposed architectures and methods. Through ablation experiments and qualitative analysis, we discover that models using interviewer's prompts learn to focus on a specific region of the interviews, where questions about past experiences with mental health issues are asked, and use them as discriminative shortcuts to detect depressed participants. In contrast, models using participant responses gather evidence from across the entire interview. Finally, to highlight the magnitude of this bias, we achieve a 0.90 F1 score by intentionally exploiting it, the highest result reported to date on this dataset using only textual information. Our findings underline the need for caution when incorporating interviewers' prompts into models, as they may inadvertently learn to exploit targeted prompts, rather than learning to characterize the language and behavior that are genuinely indicative of the patient's mental health condition.
