@@ -180,7 +180,7 @@ To report the results in the paper we followed the following steps:
 1. Run all 12 options so you have all versions of the models trained.
 2. Use the `eval_all_models.py` script as described in ["Results" section above](#results). This script will evaluate and report the performance of all versions as well as the ensemble of the best Ellie and Patient's performing model (`P-GCN^E-GCN`). Finally, in the paper, we selected the best performing models for Ellie and Patient as `E-GCN` and `P-GCN`, respectively.
 
-> 💡 **Tip:** To speed up the training of all 12 versions you can run multiple instances in parallel, each with different `-i` value. The `main.py` script is coded in such a way that can run in parallel with different `-i` without conflicts and also to run naturally as job arrays in [SGE](http://star.mit.edu/cluster/docs/0.93.3/guides/sge.html) and [Slurm](https://slurm.schedmd.com/documentation.html) using the `-t 1:24` or `--array=1-12` arguments, respectively.
+> 💡 **Tip:** To speed up the training of all 12 versions you can run multiple instances in parallel, each with different `-i` value. The `main.py` script is coded in such a way that can run in parallel with different `-i` without conflicts and also to run naturally as job arrays in [SGE](http://star.mit.edu/cluster/docs/0.93.3/guides/sge.html) and [Slurm](https://slurm.schedmd.com/documentation.html) using the `-t 1:12` or `--array=1-12` arguments, respectively.
 > In this repo we provide the example job scripts to run them (open them and modify them to adjusted to your cluster, credentials, etc.):
 > - Slurm:
 > ```bash
@@ -188,7 +188,7 @@ To report the results in the paper we followed the following steps:
 > ```
 > - SGE:
 > ```bash
-> qsub -P YOUR_PROJECT -t 1:24 sge.job
+> qsub -P YOUR_PROJECT -t 1:12 sge.job
 > ```
 ---
 ## :page_facing_up: Citation
