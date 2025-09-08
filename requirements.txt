@@ -6,4 +6,4 @@ scipy
 matplotlib
 nltk
 transformers
-datasets
+datasets<3.0.0
