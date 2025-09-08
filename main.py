@@ -109,12 +109,6 @@ def get_task_info(option, job_ix=None, only_description=False):
     return dataset, feature_size, use_pagerank, feature_selection, study_name, option_description
 
 
-parser = argparse.ArgumentParser()
-
-parser.add_argument("-i", "--task-id", help="The task id to be run", default=-1, required=False, type=int)
-args = parser.parse_args()
-
-
 class InducTGCN(nn.Module):
     """InducT-GCN model class definition"""
     def __init__(self, embedding_dim, labels, dropout, vectorizer):
@@ -637,6 +631,11 @@ def train_inductgcn(learning_rate, num_steps, save_model=False):
     return best_value, best_results, model, doc_vectorizer
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("-i", "--task-id", help="The task id to be run", default=-1, required=False, type=int)
+    args = parser.parse_args()
 
     if os.getenv('SGE_TASK_ID') is not None:  # SGE
         task_ix = int(os.getenv('SGE_TASK_ID')) - 1
