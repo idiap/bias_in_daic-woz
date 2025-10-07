@@ -151,7 +151,8 @@ for spkr_ix, spkr in enumerate(["e", "p"]):
         ax.xaxis.set_tick_params(length=0)
 
         ax.vlines(train_n[spkr][ax_ix] + 1, colors="white", ymin=0, ymax=1, linewidth=2)
-        ax.vlines(dev_n[spkr][ax_ix] + 1, colors="white", ymin=0, ymax=1, linewidth=2)
+        if test_set is not None:
+            ax.vlines(dev_n[spkr][ax_ix] + 1, colors="white", ymin=0, ymax=1, linewidth=2)
 
         if spkr == "e" and ax_ix == 0:
             y_max = 1 - np.argmax(kdes[:, interviews_mark]) / 100
