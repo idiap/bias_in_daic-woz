@@ -2,9 +2,8 @@
 
 **This repository accompanies [the paper](https://aclanthology.org/2024.clinicalnlp-1.8/) presented at [ClinicalNLP workshop](https://clinical-nlp.github.io/2024/) (NAACL 2024).**
 
-_( :point_right: You might also be interested in [this other work](https://github.com/idiap/Node_weighted_GCN_for_depression_detection), presented at Interspeech 2023)_
-
-_( :point_right: You might also be interested in [this other work](https://arxiv.org/abs/2603.24651), presented at LREC 2026, where the same analysis is extended to E-DAIC and ANDROIDS datasets)_
+> [!IMPORTANT]
+> The analysis presented in this paper was further extended to the E-DAIC and ANDROIDS datasets in a [follow-up paper](https://arxiv.org/abs/2603.24651) presented at LREC 2026. This work also uses the GCN model we introduced in [a previous paper](https://github.com/idiap/Node_weighted_GCN_for_depression_detection).
 
 ## Abstract
 
