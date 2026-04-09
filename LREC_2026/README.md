@@ -4,8 +4,8 @@
 
 [![Paper](https://img.shields.io/badge/Paper-LREC%202026-blue)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
-[![Idiap](https://img.shields.io/badge/Idiap-Research%20Institute-red)](https://www.idiap.ch)
-[![CIMAT](https://img.shields.io/badge/CIMAT-Mexico-green)](https://www.cimat.mx)
+<!-- ! [![Idiap](https://img.shields.io/badge/Idiap-Research%20Institute-red)](https://www.idiap.ch) -->
+<!-- ! [![CIMAT](https://img.shields.io/badge/CIMAT-Mexico-green)](https://www.cimat.mx) -->
 
 ---
 
@@ -161,13 +161,6 @@ This has direct implications for:
 This work was partially funded by the **Swiss National Science Foundation (SNSF)** through the SPIRIT project **ORIENTER**: *tOwards undeRstanding and modelIng the language of mENTal health disordERs* (grant no. IZSTZ0\_223488).
 
 ---
-
-<p align="center">
-  <!-- <img src="assets/idiap_logo.png" height="50" alt="Idiap"> -->
-  <!-- <img src="assets/cimat_logo.png" height="50" alt="CIMAT"> -->
-  <!-- <img src="assets/snsf_logo.png" height="50" alt="SNSF"> -->
-  <!-- TODO: Add institution and funder logos -->
-</p>
 
 <p align="center">
   <b>Idiap Research Institute</b> · <b>CIMAT</b> · <b>EPFL</b> · <b>Brno University of Technology</b>
