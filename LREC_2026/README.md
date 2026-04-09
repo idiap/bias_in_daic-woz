@@ -38,7 +38,7 @@ We find that semi-structured interview protocols — designed for clinical consi
 | ANDROIDS | GCN | 0.93 | **0.97** |
 | DAIC-WOZ | Longformer | 0.71 | **0.73** |
 | DAIC-WOZ | GCN | 0.85 | **0.88** |
-| E-DACI | Longformer | **0.67** | 0.65 |
+| E-DAIC | Longformer | **0.67** | 0.65 |
 | E-DAIC | GCN | 0.70 | **0.74** |
 
 *Development-set macro-F1 scores. On ANDROIDS, interviewer-only Longformer achieves **0.98 F1** — a 19-point gain over the participant-only model.*
@@ -55,8 +55,18 @@ This rules out architecture-specific artifacts as an explanation.
 
 <!-- ![heatmaps](assets/heatmaps.png) -->
 <!-- TODO: Add Figure 1 — temporal heatmaps showing I-GCN vs P-GCN keyword evidence -->
+Temporal heatmaps comparing keyword evidence learned by interviewer-only (I, top) vs. participant-only (P, bottom) models across interviews in the ANDROIDS and E-DAIC datasets. Each column represents one interview. The y-axis corresponds to the normalized interview timeline, where 0\% marks the beginning of the interview and 100\% marks its end. White vertical lines denote split boundaries (train/dev/test for E-DAIC; train/dev only for ANDROIDS).
 
-Temporal heatmaps reveal a stark contrast:
+![](plots/Androids_heatmap.png)
+
+#### Figure 1a -- Androids temporal heatmap
+
+
+![](plots/Edaic_heatmap.png)
+
+#### Figure 1b -- EDAIC temporal heatmap
+
+Overall, the temporal heatmaps reveal a stark contrast:
 - **I-models** concentrate decision evidence in narrow, high-contrast bands — a handful of specific interviewer turns
 - **P-models** distribute evidence across the full conversation timeline, reflecting genuine linguistic diversity
 
@@ -64,6 +74,15 @@ Temporal heatmaps reveal a stark contrast:
 
 <!-- ![excerpts](assets/interview_excerpts.png) -->
 <!-- TODO: Add Figure 2 — color-coded interview excerpts showing bias-carrying prompts -->
+Color-coded interview excerpts in which prompts identified by the I-model as bias-carrying are highlighted. Underlined words denote the model’s learned keywords, corresponding to the high-contrast narrow bands in Figure 1a and 1b respectively. 
+
+![](plots/Androids_38_PF31_2.png)
+
+#### Figure 2a -- Example interview from ANDROIDS. First utterance translates into ‘talk about your family’
+
+![](plots/Edaic_depressed_test_22.png)
+
+#### Figure 2b -- Example of a depressed interview from E-DAIC
 
 The I-models latch onto a few recurring prompts:
 - **ANDROIDS** (Italian): prompts about family, the past week, and work status
