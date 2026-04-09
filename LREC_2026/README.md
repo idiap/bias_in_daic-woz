@@ -3,7 +3,7 @@
 > **LREC 2026** — Hasindri Watawana, Sergio Burdisso, Diego A. Moreno-Galván, Fernando Sánchez-Vega, A. Pastor López-Monroy, Petr Motlicek, Esaú Villatoro-Tello
 
 [![Paper](https://img.shields.io/badge/Paper-LREC%202026-blue)]()
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue)]([LICENSE](https://www.apache.org/licenses/LICENSE-2.0))
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue)]([LICENSE](../LICENSE))
 <!-- ! [![Idiap](https://img.shields.io/badge/Idiap-Research%20Institute-red)](https://www.idiap.ch) -->
 <!-- ! [![CIMAT](https://img.shields.io/badge/CIMAT-Mexico-green)](https://www.cimat.mx) -->
 
