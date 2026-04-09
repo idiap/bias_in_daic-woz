@@ -7,7 +7,8 @@
 <!-- ! [![Idiap](https://img.shields.io/badge/Idiap-Research%20Institute-red)](https://www.idiap.ch) -->
 <!-- ! [![CIMAT](https://img.shields.io/badge/CIMAT-Mexico-green)](https://www.cimat.mx) -->
 
-The codebase that was use to run all the experiments are described in this [README](https://github.com/idiap/bias_in_daic-woz/tree/main/). 
+> [!IMPORTANT]
+> The codebase that was used to run all the experiments is described in this [README](https://github.com/idiap/bias_in_daic-woz/tree/main/). 
 
 ---
 
